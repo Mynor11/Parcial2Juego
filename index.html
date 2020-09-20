@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Priedra, Papel y Tijera</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <br>
+    <!-- <h1>Piedra, Papel y Tijera!</h1> -->
+    <header>
+      <img src="src/title.png" alt="">
+    </header>
+    <div class="rps-wrapper">
+      <ul id="events"></ul>
+      <div class="controls">
+        <div class="chat-wrapper">
+          <form id="chat-form">
+            <input id="chat" autocomplete="off" title="chat"/>
+            <button id="say">Enviar</button>
+          </form>
+        </div>
+
+        <div class="button-wrapper">
+          <button id="piedra" class="turn">Piedra</button>
+          <button id="papel" class="turn">Papel</button>
+          <button id="tijera" class="turn">Tijeras</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+  </body>
+</html>
